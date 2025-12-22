@@ -23,3 +23,4 @@ This application provides:
 ---
 
 ## 🏗️ Project Architecture
+ev-smart-charging-app/ │ ├── frontend/        # User Interface (Web/App) │   ├── index.html │   ├── style.css │   └── app.js │ ├── backend/         # Server + Logic + AI │   ├── app.py │   ├── config.py │   ├── db.py │   │ │   ├── models/      # Database schemas │   │   ├── users.py │   │   ├── stations.py │   │   └── bookings.py │   │ │   ├── services/    # Business logic │   │   ├── booking.py │   │   └── stats.py │   │ │   └── ai_ml/       # AI / ML forecasting │       ├── forecast.py │       └── train_model.py │ └── README.md

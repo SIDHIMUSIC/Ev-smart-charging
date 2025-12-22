@@ -5,9 +5,12 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return jsonify({
-        "status": "success",
-        "message": "EV Smart Charging Backend is running 🚀"
+        "message": "EV Smart Charging Backend is running"
     })
+
+@app.route("/health")
+def health():
+    return jsonify({"status": "ok"})
 
 if __name__ == "__main__":
     app.run(debug=True)

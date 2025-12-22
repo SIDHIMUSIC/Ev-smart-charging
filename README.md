@@ -23,4 +23,37 @@ This application provides:
 ---
 
 ## 🏗️ Project Architecture
-ev-smart-charging-app/ │ ├── frontend/        # User Interface (Web/App) │   ├── index.html │   ├── style.css │   └── app.js │ ├── backend/         # Server + Logic + AI │   ├── app.py │   ├── config.py │   ├── db.py │   │ │   ├── models/      # Database schemas │   │   ├── users.py │   │   ├── stations.py │   │   └── bookings.py │   │ │   ├── services/    # Business logic │   │   ├── booking.py │   │   └── stats.py │   │ │   └── ai_ml/       # AI / ML forecasting │       ├── forecast.py │       └── train_model.py │ └── README.md
+
+The application follows a **clean full-stack architecture** with a clear separation of concerns between the frontend, backend, and AI/ML components.
+
+### 🔹 Frontend Layer
+Responsible for user interaction and UI rendering.
+- Built using HTML, CSS, and JavaScript
+- Handles user actions such as slot booking and data requests
+- Communicates with the backend via REST APIs
+
+### 🔹 Backend Layer
+Acts as the core system responsible for application logic and data handling.
+- Exposes RESTful APIs using Python
+- Manages users, charging stations, and bookings
+- Acts as a bridge between frontend and database
+- Integrates AI/ML modules for prediction
+
+### 🔹 AI / ML Layer
+Handles intelligent forecasting and analytics.
+- Analyzes historical booking data
+- Predicts peak charging hours and load
+- Helps service providers optimize infrastructure planning
+
+### 🔹 Database Layer
+Stores all persistent application data.
+- User details
+- Charging station information
+- Booking and usage history
+
+This modular architecture ensures:
+- High scalability
+- Easy maintenance
+- Clear separation of responsibilities
+- Future extensibility for advanced ML models
+

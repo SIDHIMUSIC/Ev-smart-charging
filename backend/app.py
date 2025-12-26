@@ -25,3 +25,12 @@ def api_book():
         time_slot="6PM-7PM"
     )
     return booking
+from ai_ml.forecast import forecast_load
+
+@app.route("/api/forecast")
+def api_forecast():
+    predicted = forecast_load(total_bookings=5)
+    return {
+        "predicted_load": predicted,
+        "peak_hours": "6PM - 9PM"
+    }

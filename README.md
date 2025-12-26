@@ -20,6 +20,11 @@ This application provides:
 - A **Backend system** to manage bookings and stations
 - An **AI/ML module** to forecast charging demand and peak hours
 
+## 🚀 Innovation
+Unlike traditional EV charging systems, this solution combines
+**slot-based booking** with **AI-driven demand forecasting**.
+This helps reduce waiting time for users and enables service providers
+to proactively manage charging infrastructure.
 ---
 
 ## 🏗️ Project Architecture
@@ -62,3 +67,13 @@ This modular architecture ensures:
 2. Backend processes the booking request
 3. AI module predicts expected charging load
 4. System returns optimized response
+## 🛠️ Tech Stack
+- Frontend: HTML, CSS, JavaScript
+- Backend: Python (Flask)
+- Database: MongoDB (planned)
+- AI/ML: Forecasting based on booking patterns
+
+## 📈 Impact
+- Reduced waiting time at EV charging stations
+- Improved utilization of charging infrastructure
+- Data-driven planning for service providers

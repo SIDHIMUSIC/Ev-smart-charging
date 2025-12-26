@@ -57,3 +57,8 @@ This modular architecture ensures:
 - Clear separation of responsibilities
 - Future extensibility for advanced ML models
 
+## Demo Flow
+1. User selects a charging slot from the frontend
+2. Backend processes the booking request
+3. AI module predicts expected charging load
+4. System returns optimized response

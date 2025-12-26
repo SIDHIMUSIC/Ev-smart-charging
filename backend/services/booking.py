@@ -1,5 +1,7 @@
-def create_booking():
+def create_booking(user_id, station_id, time_slot):
     return {
-        "result": "success",
-        "message": "Slot booked successfully"
+        "user_id": user_id,
+        "station_id": station_id,
+        "time_slot": time_slot,
+        "status": "CONFIRMED"
     }
